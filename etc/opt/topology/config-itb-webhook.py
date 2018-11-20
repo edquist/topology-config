@@ -4,9 +4,14 @@
 #
 
 
-GIT_SSH_KEY = "/etc/opt/topology/bitbucket"
+#GIT_SSH_KEY = "/etc/opt/topology/bitbucket"
+GIT_SSH_KEY = "/dev/null"
 
-TOPOLOGY_DATA_DIR = "/var/cache/topology-itb/topology"
-CONTACT_DATA_DIR = "/var/cache/topology-itb/contact"
+# TODO: add topomerge github access token...
 
-INSTANCE_NAME = "ITB instance"
+
+TOPOLOGY_DATA_DIR = "/var/cache/topology-itb-webhook/topology"
+CONTACT_DATA_DIR = "/var/cache/topology-itb-webhook/contact"
+WEBHOOK_DATA_DIR = "/var/cache/topology-itb-webhook/topology.git"
+
+INSTANCE_NAME = "ITB webhook instance"
